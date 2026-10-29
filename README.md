@@ -14,7 +14,7 @@ Materials for the VMA protocol. The original distribution is stored as zip archi
 
 Fix detail: in the FX endpoint, the state was previously assigned a new x directly (`st.x = ...`), so the amplitudes never followed and `norm2`/`ratio` stayed at the first x value for every later x. The fixed code re-scales via `update_x` (105) or re-initialises the state per x (104 default path), and all ratios now evaluate to 1.0.
 
-Note: the zip archives above are the original May 2026 packages and still contain the pre-fix FX code. Use the root `.py` files for the fixed behaviour.
+The zip archives above were also replaced with FX-fixed builds on 2026-10-29, so the archives and the root `.py` files now contain the same fixed code.
 
 ## License
 
